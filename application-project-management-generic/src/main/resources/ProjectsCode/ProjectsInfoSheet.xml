@@ -193,7 +193,7 @@ priority=1</parameters>
 
 (% id="pInfo3"  %)
 (((
-#if(!$doc.isNew() and $context.display != 'edit' and !$subproject)
+#if(!$doc.isNew() and $context.display != 'edit')
   == $services.localization.render('prj.subproject') ==
 
   #set($subprojectUrl = $doc.getURL('create', 'template=ProjectsCode.ProjectsCodeTemplate'))
